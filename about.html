@@ -34,12 +34,35 @@
         </ul>
         <a href="ConnectRact.pdf" idea><i class="fa fa-download" aria-hidden="true"></i> Our Ideation</a>
     </header>
+
+
+    <div id="carousel">
+        <figure id="spinner">
+          <img src="img/Screenshot (483).png" alt>
+          <img src="img/Screenshot (484).png" alt>
+          <img src="img/Screenshot (485).png" alt>
+          <img src="img/Screenshot (486).png" alt>
+          <img src="img/Screenshot (487).png" alt>
+          <img src="img/Screenshot (490).png" alt>
+          <img src="img/Screenshot (491).png" alt>
+          
+        </figure>
+      </div>
+      <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+      <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
     <footer>
         <h2>ConnectRact</h2>
         <h6>COPYRIGHT © 2021 ConnectRact PVT. LTD. ALL RIGHTS RESERVED</h6>
     </footer>
 </body>
 <script>
+
+var angle = 0;
+function galleryspin(sign) { 
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
     [nav] = document.getElementsByTagName('ul')
     burger.onclick = () => {
         burger.classList.toggle('toggle')
