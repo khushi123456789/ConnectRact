@@ -130,12 +130,19 @@
       filter: hue-rotate(80deg) saturate(140%);
       background-image: url("https://images.unsplash.com/photo-1595113229230-5f285a65dd18?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNvbGxlZ2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
     }
-    
+  
     .container--3 {
       filter: hue-rotate(160deg) saturate(140%);
       background-image: url("https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29sbGVnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
     }
-    
+    .container--4 {
+      filter: hue-rotate(80deg) saturate(140%);
+      background-image: url("https://images.unsplash.com/photo-1610894496955-2eb9fb12d2a9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29sbGVnZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    }
+    .container--5 {
+      filter: hue-rotate(80deg) ;
+      background-image: url("https://images.unsplash.com/photo-1595134561159-11a5fbf6b3f4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y29sbGVnZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    }
     .container p {
       color: hsla(0, 0%, 100%, .6);
       font-size: 2.2rem;
@@ -153,7 +160,32 @@
       left: 20px;
       color: hsla(0, 0%, 0%, .6);
       font-size: 1.6rem;
-    }</style>
+    }
+    .button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
+  
+.button2 {
+	background-color: white; 
+	color: black; 
+	border: 2px solid #008CBA;
+  border-radius: 5px;
+  }
+  
+  .button2:hover {
+	background-color: #008CBA;
+	color: white;
+  }</style>
 <body>
     <div class="circle"></div>
     <div class="rect"></div>
@@ -170,6 +202,7 @@
             <li><a href="career.html">Career</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="team.html">Team</a></li>
+            <li><a href="team.html">Q&A</a></li>
             <a href="ConnectRact.pdf" idea><i class="fa fa-download" aria-hidden="true"></i> Our Ideation</a>
         </ul>
         <a href="ConnectRact.pdf" idea><i class="fa fa-download" aria-hidden="true"></i> Our Ideation</a>
@@ -177,30 +210,47 @@
 
     
     <h1>Our Colleges</h1>
-<p>Click you your college for interaction.</p>
+<p>Click on the button for college interaction.</p>
 
 <section class="main">
 
   <div class="wrap wrap--1">
     <div class="container container--1">
       <p>DTU</p>
-     
+    
     
     </div>
+    <button class="button button2">Chat</button>
   </div>
+ 
 
   <div class="wrap wrap--2">
     <div class="container container--2">
       <p>NSIT</p>
     </div>
+    <button class="button button2">Chat</button>
   </div>
 
   <div class="wrap wrap--3">
     <div class="container container--3">
       <p>IIT Delhi</p>
     </div>
+    <button class="button button2">Chat</button>
   </div>
 
+  <div class="wrap wrap--4">
+    <div class="container container--4">
+      <p>DEI</p>
+    </div>
+    <button class="button button2">Chat</button>
+  </div>
+  
+  <div class="wrap wrap--5">
+    <div class="container container--5">
+      <p>SRM</p>
+    </div>
+    <button class="button button2">Chat</button>
+  </div>
 </section>
 
 
@@ -316,6 +366,14 @@ tiltEffect: 'normal'
 const wrap3 = new parallaxTiltEffect({
 element: $('.wrap--3'),
 tiltEffect: 'reverse'
+});
+const wrap4 = new parallaxTiltEffect({
+element: $('.wrap--4'),
+tiltEffect: 'reverse'
+});
+const wrap5 = new parallaxTiltEffect({
+element: $('.wrap--5'),
+tiltEffect: 'normal'
 });
 </script>
 <script src="quora-clone/quora-clone/src/index.js"></script>
